@@ -1,0 +1,6 @@
+---
+org: "cloudnativerioja"
+teams:
+  - name: "Collaborators"
+    context: "Collaborators"
+    description: "Members of Cloud Native Rioja"

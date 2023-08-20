@@ -2,7 +2,11 @@ module github-org-iac
 
 go 1.18
 
-require github.com/pulumi/pulumi/sdk/v3 v3.60.1
+require (
+	github.com/pulumi/pulumi-github/sdk/v4 v4.17.0
+	github.com/pulumi/pulumi/sdk/v3 v3.60.1
+	gopkg.in/yaml.v2 v2.4.0
+)
 
 require (
 	github.com/Microsoft/go-winio v0.5.2 // indirect
@@ -35,7 +39,6 @@ require (
 	github.com/pjbgf/sha1cd v0.3.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pkg/term v1.1.0 // indirect
-	github.com/pulumi/pulumi-github/sdk/v4 v4.17.0 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/sabhiram/go-gitignore v0.0.0-20210923224102-525f6e181f06 // indirect
