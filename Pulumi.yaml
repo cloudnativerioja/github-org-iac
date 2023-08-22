@@ -1,0 +1,3 @@
+name: github-org-iac
+runtime: go
+description: mantain github org
