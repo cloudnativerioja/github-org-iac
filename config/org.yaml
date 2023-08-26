@@ -5,11 +5,31 @@ teams:
     description: Members of Cloud Native Rioja
     privacy: closed
     members:
-      - username: user2
+      - username: gbalcony
         role: member
-  - name: myteam2
-    description: team 2 description
+      - username: farconada
+        role: member
+      - username: borjareinares
+        role: member
+      - username: chuchip
+        role: member
+      - username: pabpereza
+        role: member
+      - username: darues
+        role: member
+      - username: jorgelon
+        role: member
+      - username: EnriqueHormilla
+        role: member
+      - username: Aberasturi
+        role: member
+  - name: Organizers
+    description: Organizers of Cloud Native Rioja
     privacy: secret
     members:
-      - username: user1
+      - username: dcristobalhMad
         role: maintainer
+      - username: statickidz
+        role: member
+      - username: mario-ezquerro
+        role: member
