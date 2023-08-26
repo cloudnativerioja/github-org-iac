@@ -1,6 +1,15 @@
 ---
-org: "cloudnativerioja"
+organization: cloudnativerioja
 teams:
-  - name: "Collaborators"
-    context: "Collaborators"
-    description: "Members of Cloud Native Rioja"
+  - name: Collaborators
+    description: Members of Cloud Native Rioja
+    privacy: closed
+    members:
+      - username: user2
+        role: member
+  - name: myteam2
+    description: team 2 description
+    privacy: secret
+    members:
+      - username: user1
+        role: maintainer
