@@ -1,6 +1,35 @@
 ---
-org: "cloudnativerioja"
+organization: cloudnativerioja
 teams:
-  - name: "Collaborators"
-    context: "Collaborators"
-    description: "Members of Cloud Native Rioja"
+  - name: Collaborators
+    description: Members of Cloud Native Rioja
+    privacy: closed
+    members:
+      - username: gbalcony
+        role: member
+      - username: farconada
+        role: member
+      - username: borjareinares
+        role: member
+      - username: chuchip
+        role: member
+      - username: pabpereza
+        role: member
+      - username: darues
+        role: member
+      - username: jorgelon
+        role: member
+      - username: EnriqueHormilla
+        role: member
+      - username: Aberasturi
+        role: member
+  - name: Organizers
+    description: Organizers of Cloud Native Rioja
+    privacy: secret
+    members:
+      - username: dcristobalhMad
+        role: maintainer
+      - username: statickidz
+        role: member
+      - username: mario-ezquerro
+        role: member
