@@ -50,6 +50,6 @@ jobs:
           command: preview
           stack-name: cloudnativerioja/github-org-iac/github-org-iac
         env:
-          GITHUB_OWNER: ${{ secrets.GITHUB_OWNER }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OWNER: ${{ secrets.GH_OWNER }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}

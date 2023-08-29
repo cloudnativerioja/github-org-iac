@@ -23,6 +23,8 @@ teams:
         role: member
       - username: Aberasturi
         role: member
+      - username: edumgui
+        role: member
   - name: Organizers
     description: Organizers of Cloud Native Rioja
     privacy: secret
