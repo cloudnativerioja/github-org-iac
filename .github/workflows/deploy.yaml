@@ -1,0 +1,25 @@
+name: Pulumi-deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  update:
+    name: Desploy/update-infra
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
+        with:
+          go-version: "stable"
+      - run: go mod download
+      - uses: pulumi/actions@v3
+        with:
+          command: up
+          color: always
+          refresh: true
+          stack-name: cloudnativerioja/github-org-iac/github-org-iac
+        env:
+          GITHUB_OWNER: ${{ secrets.GH_OWNER }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}

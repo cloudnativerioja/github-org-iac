@@ -47,6 +47,7 @@ jobs:
       - uses: pulumi/actions@v3
         with:
           color: always
+          refresh: true
           command: preview
           stack-name: cloudnativerioja/github-org-iac/github-org-iac
         env:
