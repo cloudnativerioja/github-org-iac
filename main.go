@@ -22,8 +22,10 @@ type Team struct {
 }
 
 type Repository struct {
-	Name        string `yaml:"name"`
-	Description string `yaml:"description"`
+	Name        string   `yaml:"name"`
+	Description string   `yaml:"description"`
+	Visibility  string   `yaml:"visibility"`
+	Topics      []string `yaml:"topics"`
 }
 
 type GitHubEntities struct {
@@ -46,8 +48,22 @@ func main() {
 		// Create Github repositories
 		for _, repo := range data.Repositories {
 			_, err := github.NewRepository(ctx, repo.Name, &github.RepositoryArgs{
-				Description: pulumi.String(repo.Description),
-				Name:        pulumi.String(repo.Name),
+				Description:  pulumi.String(repo.Description),
+				Name:         pulumi.String(repo.Name),
+				HasDownloads: pulumi.Bool(true),
+				HasIssues:    pulumi.Bool(true),
+				HasProjects:  pulumi.Bool(true),
+				HasWiki:      pulumi.Bool(true),
+				SecurityAndAnalysis: &github.RepositorySecurityAndAnalysisArgs{
+					SecretScanning: &github.RepositorySecurityAndAnalysisSecretScanningArgs{
+						Status: pulumi.String("disabled"),
+					},
+					SecretScanningPushProtection: &github.RepositorySecurityAndAnalysisSecretScanningPushProtectionArgs{
+						Status: pulumi.String("disabled"),
+					},
+				},
+				Visibility: pulumi.String(repo.Visibility),
+				Topics:     pulumi.ToStringArray(repo.Topics),
 			})
 			if err != nil {
 				return err
