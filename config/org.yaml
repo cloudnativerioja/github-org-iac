@@ -1,4 +1,8 @@
 ---
+######################
+# Organization
+######################
+
 organization: cloudnativerioja
 teams:
   - name: Collaborators
@@ -35,6 +39,10 @@ teams:
         role: member
       - username: mario-ezquerro
         role: member
+
+######################
+# Repositories
+######################
 
 repositories:
   - name: github-org-iac
