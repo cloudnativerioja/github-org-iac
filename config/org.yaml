@@ -46,6 +46,10 @@ teams:
 
 repositories:
   - name: github-org-iac
-    description: Repository to manage users and teams in the github organisation with pulumi
+    description: "Repository to manage users and teams in the github organisation with pulumi"
     visibility: public
     topics: [iac, pulumi, github, golang, organization, cloudnativerioja]
+  - name: cloudflare-iac-rioja
+    description: "Repository to manage cloudnativerioja.com DNS with pulumi and Golang"
+    visibility: public
+    #topics: [iac, pulumi, cloudflare, golang, DNS, cloudnativerioja] # Not supported yet
