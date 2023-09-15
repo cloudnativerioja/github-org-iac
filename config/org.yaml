@@ -53,3 +53,7 @@ repositories:
     description: "Repository to manage cloudnativerioja.com DNS with pulumi and Golang"
     visibility: public
     #topics: [iac, pulumi, cloudflare, golang, DNS, cloudnativerioja] # Not supported yet
+  - name: cluster-demos
+    description: "Repository to manage CIVO cluster demos with pulumi and Golang"
+    visibility: public
+    #topics: [iac, pulumi, golang, kubernetes, cluster, cloudnativerioja]
