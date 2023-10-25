@@ -3,7 +3,6 @@ module github-org-iac
 go 1.18
 
 require (
-	github.com/pulumi/pulumi-github/sdk/v4 v4.17.0
 	github.com/pulumi/pulumi-github/sdk/v5 v5.16.0
 	github.com/pulumi/pulumi/sdk/v3 v3.60.1
 	gopkg.in/yaml.v2 v2.4.0
@@ -16,7 +15,7 @@ require (
 	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
 	github.com/blang/semver v3.5.1+incompatible // indirect
 	github.com/cheggaaa/pb v1.0.29 // indirect
-	github.com/cloudflare/circl v1.1.0 // indirect
+	github.com/cloudflare/circl v1.3.3 // indirect
 	github.com/djherbis/times v1.5.0 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/go-git/gcfg v1.5.0 // indirect
