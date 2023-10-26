@@ -46,6 +46,7 @@ jobs:
       - run: go mod download
       - uses: pulumi/actions@v3
         with:
+          pulumi-version: v3.84.0
           color: always
           refresh: true
           command: preview
